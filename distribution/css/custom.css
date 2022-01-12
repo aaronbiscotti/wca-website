@@ -1,0 +1,20 @@
+/* your styles go here */
+.org-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recognition-title {
+    font-weight: 200;
+    margin-bottom: 50px;
+
+}
+
+.all-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 100px 100px;
+}
