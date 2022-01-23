@@ -265,34 +265,51 @@
               service and increasing social mobility.</p>
           </div>
           <div class="col-md-4 col-sm-12">
-            <h5 class="mb-4 mt-3">Upcoming events</h5>
+            <h5 class="mb-4 mt-3">Links</h5>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <h6 class="mb-1"> <a class="reset-anchor text-primary" href="#!">Fundraising chocolates</a></h6>
-                <p class="text-muted text-small mb-0">New York, 18 April 2022</p>
-              </li>
-              <li class="mb-2">
-                <h6 class="mb-1"> <a class="reset-anchor text-primary" href="#!">Club initiation</a></h6>
-                <p class="text-muted text-small mb-0">New York, 18 April 2022</p>
-              </li>
+                <h6 class="mb-1">
+                  <a class="reset-anchor text-primary" href="index.html">Home</a>
+                </h6>
+                </li>
+                <li class="mb-2">
+                  <h6 class="mb-1">
+                    <a class="reset-anchor text-primary" target="_blank"
+                      href="https://www.paypal.com/donate/?hosted_button_id=D8WVDK67CNM5L">Donate</a>
+                  </h6>
+                  </li>
+                  <li class="mb-2">
+                    <h6 class="mb-1">
+                      <a class="reset-anchor text-primary" target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdhMe6zJyZYDNaEjLoWxZSgZU7Ox_TYr3HSdwLrDKUh8qE-qQ/viewform?usp=sf_link">Sign-Up</a>
+                    </h6>
+                  </li>
+                  <li class="mb-2">
+                    <h6 class="mb-1">
+                      <a class="reset-anchor text-primary" href="index.html#contact">Contact Us</a>
+                    </h6>
+                  </li>
             </ul>
           </div>
           <div class="col-md-4 col-sm-12">
             <h5 class="mb-4 mt-3">Newsletter</h5>
             <p class="text-small text-muted">Sign up for our monthly newsletter where we share our latest successes,
               upcoming events, and more!</p>
-            <div class="input-group">
-              <input class="form-control border-dark text-white rounded-0 bg-none" type="search"
-                placeholder="Enter your email address" aria-label="email address" aria-describedby="button-addon2">
-              <button class="btn btn-primary px-4" id="button-addon2" type="submit"><i
-                  class="fas fa-paper-plane"></i></button>
-            </div>
+            <form id="FORM" method="post" autocomplete="off" name="google-sheet">
+              <div class="input-group">
+                <input class="form-control border-dark text-white rounded-0 bg-none" type="search"
+                  placeholder="Enter your email address" name="email" aria-label="email address"
+                  aria-describedby="button-addon2">
+                  <button class="btn btn-primary px-4" id="button-addon2" name="submit" type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                  </div>
+            </form>
           </div>
         </div>
         <div class="py-4 border-top border-dark text-center">
           <p class="mb-0 text-muted">Website designed by <a class="reset-anchor text-primary"
               href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>. </p>
-          <!-- If you want to remove the backlink, please purchase the Attribution-Free License. See details in readme.txt or license.txt. Thanks!-->
         </div>
       </div>
     </footer>
@@ -302,6 +319,20 @@
     <script src="js/countdown.js"></script>
     <script src="vendor/progressbar.js/progressbar.js"></script>
     <script src="js/front.js"></script>
+    <script type="text/javascript">
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbyH8ZalEv-zr4VrCvuu3GVZUKnUyPrjTo60C8SuQO7cydXVfziRnu65kV53zPQ2rbq7MQ/exec'
+      const form = document.forms['google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        document.getElementById("FORM").reset()
+      })
+    </script>
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 
