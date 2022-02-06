@@ -5,10 +5,23 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1100px) {
+    .org-container {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .org-logo {
+        margin: 20px;
+    }
+}
+
 .recognition-title {
     font-weight: 200;
     margin-bottom: 50px;
-
 }
 
 .all-cont {
