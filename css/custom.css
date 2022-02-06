@@ -5,6 +5,11 @@
     justify-content: space-between;
 }
 
+.recognition-title {
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
 @media (max-width: 1100px) {
     .org-container {
 
@@ -17,13 +22,11 @@
     .org-logo {
         margin: 20px;
     }
-}
 
-.recognition-title {
-    font-weight: 200;
-    margin-bottom: 50px;
+    .recognition-title {
+        font-size: 25px;
+        }
 }
-
 .all-cont {
     display: flex;
     align-items: center;
