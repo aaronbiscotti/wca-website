@@ -40,3 +40,8 @@
     padding: 10px;
     font-size: 14px;
 }
+.faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
