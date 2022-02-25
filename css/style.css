@@ -13867,12 +13867,23 @@ video {
 }
 
 svg {
-  width: 150px;
-  height: 150px;
+  position: relative;
+  width: 100%;
+  height: 100%;
   fill: #fff;
   stroke: #fff;
   cursor: pointer;
   background-color: rgba(black, 0.2);
   border-radius: 50%;
   opacity: 0.9;
+}
+@media (max-width: 575px) {
+  #circle-play-b {
+    margin-top: 100px;
+    width: 25%;
+  }
+
+  .watch {
+    opacity: 0;
+  }
 }
