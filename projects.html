@@ -14,9 +14,7 @@
   <!-- Swiper slider-->
   <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
   <!-- theme stylesheet-->
-  <link rel="stylesheet" href="css/style.green.css" id="theme-stylesheet">
-  <!-- Custom stylesheet - for your changes-->
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
   <!-- Favicon-->
   <link rel="shortcut icon" href="img/favicon.svg">
 </head>
@@ -280,13 +278,16 @@
             </div>
           </div>
   </section>
-  <footer class="pt-5 text-white" style="background: #111">
+  <!-- Scroll Top Button--><a class="scroll-top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+  <footer class="pt-5 text-white" style="background: #111; margin-top: 0px">
     <div class="container pt-5">
       <div class="row mb-5 pb-5">
         <div class="col-md-4 col-sm-12">
           <h1>We Care Act NYC</h1>
-          <p class="text-small text-muted">A New York based 501c3 nonprofit dedicated to engaging youth in community
-            service and increasing social mobility.</p>
+          <p class="text-small text-muted">We Care Act is a registered, Houston based 501(c)(3) tax-exempt
+            non-profit organization dedicated to engaging youth in
+            community
+            service and increasing social mobility. We Care Act NYC is an affiliate to We Care Act.</p>
         </div>
         <div class="col-md-4 col-sm-12">
           <h5 class="mb-4 mt-3">Links</h5>
@@ -294,6 +295,11 @@
             <li class="mb-2">
               <h6 class="mb-1">
                 <a class="reset-anchor text-primary" href="index.html">Home</a>
+              </h6>
+            </li>
+            <li class="mb-2">
+              <h6 class="mb-1">
+                <a class="reset-anchor text-primary" href="about.html">About Us</a>
               </h6>
             </li>
             <li class="mb-2">
@@ -316,7 +322,8 @@
         </div>
         <div class="col-md-4 col-sm-12">
           <h5 class="mb-4 mt-3">Newsletter</h5>
-          <p class="text-small text-muted">Sign up for our monthly newsletter where we share our latest successes,
+          <p class="text-small text-muted">Sign up for our monthly newsletter where we share our latest
+            successes,
             upcoming events, and more!</p>
           <form id="FORM" method="post" autocomplete="off" name="google-sheet">
             <div class="input-group">
@@ -331,12 +338,12 @@
         </div>
       </div>
       <div class="py-4 border-top border-dark text-center">
-        <p class="mb-0 text-muted">Website designed by <a class="reset-anchor text-primary"
-            href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>. Any technical inquiries should
+        <p class="mb-0 text-muted">We Care Act NYC © 2022. All Rights Reserved. Any technical inquiries
+          should
           be directed to <a href="mailto: tanga@bxscience.edu">tanga@bxscience.edu</a></p>
       </div>
     </div>
-  </footer> <!-- JavaScript files-->
+  </footer>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
   <script src="js/countdown.js"></script>
@@ -355,30 +362,6 @@
       })
       document.getElementById("FORM").reset()
     })
-  </script>
-  <script>
-    // ------------------------------------------------------- //
-    //   Inject SVG Sprite - 
-    //   see more here 
-    //   https://css-tricks.com/ajaxing-svg-sprite/
-    // ------------------------------------------------------ //
-    function injectSvgSprite(path) {
-
-      var ajax = new XMLHttpRequest();
-      ajax.open("GET", path, true);
-      ajax.send();
-      ajax.onload = function (e) {
-        var div = document.createElement("div");
-        div.className = 'd-none';
-        div.innerHTML = ajax.responseText;
-        document.body.insertBefore(div, document.body.childNodes[0]);
-      }
-    }
-    // this is set to BootstrapTemple website as you cannot 
-    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-    // while using file:// protocol
-    // pls don't forget to change to your domain :)
-    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
   </script>
   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"

@@ -14,9 +14,7 @@
     <!-- Swiper slider-->
     <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.green.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.svg">
 </head>
@@ -85,6 +83,41 @@
                         New York with laptops. </p>
                     <h2 class="h5">What we've done</h2>
                     <p class="text-muted">See <a href="projects.html">our latest projects</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 container" style="margin-top: 100px">
+        <div class="video-wrapper">
+            <h2>We Care Act Houston</h2>
+            <p class="lead">Learn more about our parent organization, We Care Act Houston.</p>
+            <p class="text-muted lead" style="margin-top: -10px; margin-bottom: 30px">Source: <a target="_blank"
+                    href="https://www.youtube.com/watch?v=LA-W3u8dtEQ&t=37s">2018 Texas
+                    Environmental Excellence Awards</a></p>
+            <div class="video-container" id="video-container">
+                <video id="video" width="1920" height="1080" preload="metadata" poster="/img/thumbnail.png">
+                    <source src="img/video.mp4" type="video/mp4">
+                </video>
+                <div class="play-button-wrapper">
+                    <div title="Play video" class="play-gif" id="circle-play-b">
+                        <!-- SVG Play Button -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+                            <defs>
+                                <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="a">
+                                    <stop stop-color="#FFF" stop-opacity="0" offset="0%" />
+                                    <stop stop-color="#FFF" offset="100%" />
+                                </radialGradient>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <circle fill="url(#a)" opacity=".3" cx="65" cy="65" r="65" />
+                                <circle fill="url(#a)" opacity=".3" cx="65" cy="65" r="46.429" />
+                                <path
+                                    d="m75.983 69.819-13.744 9.02a5 5 0 0 1-7.743-4.181v-18.04a5 5 0 0 1 7.743-4.18l13.744 9.02a5 5 0 0 1 0 8.36z"
+                                    fill="#FFF" />
+                            </g>
+                        </svg>
+                        <p style="color: white; font-size: 20px; margin-top: 20px;">Watch video</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,69 +307,85 @@
             </div>
         </div>
     </section>
+    <!-- Scroll Top Button--><a class="scroll-top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
     <footer class="pt-5 text-white" style="background: #111; margin-top: 0px">
         <div class="container pt-5">
             <div class="row mb-5 pb-5">
-                <div class="col-md-4 col-sm-12">
-                    <h1>We Care Act NYC</h1>
-                    <p class="text-small text-muted">A New York based 501c3 nonprofit dedicated to engaging youth in
+              <div class="col-md-4 col-sm-12">
+                  <h1>We Care Act NYC</h1>
+                    <p class="text-small text-muted">We Care Act is a registered, Houston based 501(c)(3) tax-exempt
+                        non-profit organization dedicated to engaging youth in
                         community
-                        service and increasing social mobility.</p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h5 class="mb-4 mt-3">Links</h5>
-                    <ul class="list-unstyled">
+                      service and increasing social mobility. We Care Act NYC is an affiliate to We Care Act.</p>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                          <h5 class="mb-4 mt-3">Links</h5>
+                          <ul class="list-unstyled">
                         <li class="mb-2">
-                            <h6 class="mb-1">
+                          <h6 class="mb-1">
                                 <a class="reset-anchor text-primary" href="index.html">Home</a>
-                            </h6>
-                        </li>
-                        <li class="mb-2">
-                            <h6 class="mb-1">
+                                </h6>
+                                </li>
+                                <li class="mb-2">
+                                    <h6 class="mb-1">
                                 <a class="reset-anchor text-primary" target="_blank"
-                                    href="https://gofund.me/66af15fa">Donate</a>
-                            </h6>
-                        </li>
-                        <li class="mb-2">
-                            <h6 class="mb-1">
-                                <a class="reset-anchor text-primary" target="_blank"
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdhMe6zJyZYDNaEjLoWxZSgZU7Ox_TYr3HSdwLrDKUh8qE-qQ/viewform?usp=sf_link">Sign-Up</a>
-                            </h6>
-                        </li>
-                        <li class="mb-2">
-                            <h6 class="mb-1">
+                                  href="https://gofund.me/66af15fa">Donate</a>
+                                  </h6>
+                                  </li>
+                                  <li class="mb-2">
+                                      <h6 class="mb-1">
+                                          <a class="reset-anchor text-primary" target="_blank"
+                                              href="https://docs.google.com/forms/d/e/1FAIpQLSdhMe6zJyZYDNaEjLoWxZSgZU7Ox_TYr3HSdwLrDKUh8qE-qQ/viewform?usp=sf_link">Sign-Up</a>
+                                      </h6>
+                                  </li>
+                                  <li class="mb-2">
+                                      <h6 class="mb-1">
                                 <a class="reset-anchor text-primary" href="index.html#contact">Contact Us</a>
-                            </h6>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h5 class="mb-4 mt-3">Newsletter</h5>
+                                </h6>
+                                </li>
+                                </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <h5 class="mb-4 mt-3">Newsletter</h5>
                     <p class="text-small text-muted">Sign up for our monthly newsletter where we share our latest
-                        successes,
-                        upcoming events, and more!</p>
+                      successes,
+                      upcoming events, and more!</p>
                     <form id="FORM" method="post" autocomplete="off" name="google-sheet">
-                        <div class="input-group">
-                            <input class="form-control border-dark text-white rounded-0 bg-none" type="search"
-                                placeholder="Enter your email address" name="email" aria-label="email address"
-                                aria-describedby="button-addon2">
-                            <button class="btn btn-primary px-4" id="button-addon2" name="submit" type="submit">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </div>
+                      <div class="input-group">
+                          <input class="form-control border-dark text-white rounded-0 bg-none" type="search"
+                              placeholder="Enter your email address" name="email" aria-label="email address"
+                              aria-describedby="button-addon2">
+                          <button class="btn btn-primary px-4" id="button-addon2" name="submit" type="submit">
+                              <i class="fas fa-paper-plane"></i>
+                          </button>
+                      </div>
                     </form>
                 </div>
             </div>
             <div class="py-4 border-top border-dark text-center">
-                <p class="mb-0 text-muted">We Care Act NYC @ 2022. All Rights Reserved. Any technical inquiries
+                <p class="mb-0 text-muted">We Care Act NYC © 2022. All Rights Reserved. Any technical inquiries
                     should
                     be directed to <a href="mailto: tanga@bxscience.edu">tanga@bxscience.edu</a></p>
-                    </div>
+                </div>
         </div>
     </footer>
     <!-- JavaScript files-->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const video = document.getElementById("video");
+        const circlePlayButton = document.getElementById("circle-play-b");
+
+        function togglePlay() {
+            video.play();
+            video.setAttribute("controls", "controls");
+        }
+
+        circlePlayButton.addEventListener("click", togglePlay);
+        video.addEventListener("playing", function () {
+            circlePlayButton.remove();
+        });
+    </script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/countdown.js"></script>
     <script src="vendor/progressbar.js/progressbar.js"></script>
     <script src="js/front.js"></script>
@@ -353,30 +402,6 @@
             })
             document.getElementById("FORM").reset()
         })
-    </script>
-    <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite - 
-        //   see more here 
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
-        function injectSvgSprite(path) {
-
-            var ajax = new XMLHttpRequest();
-            ajax.open("GET", path, true);
-            ajax.send();
-            ajax.onload = function (e) {
-                var div = document.createElement("div");
-                div.className = 'd-none';
-                div.innerHTML = ajax.responseText;
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            }
-        }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
-        injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
     </script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"

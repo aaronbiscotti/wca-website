@@ -99,10 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       document.querySelector(".navbar-toggler").classList.toggle("active");
     });
-
-  /* =====================================================
-		BOOTSTRAP SCROLLSPY
-	===================================================== */
   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: "#navbar",
   });
