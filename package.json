@@ -1,0 +1,23 @@
+{
+  "name": "wca-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerseypintail44/wca-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerseypintail44/wca-website/issues"
+  },
+  "homepage": "https://github.com/jerseypintail44/wca-website#readme",
+  "dependencies": {
+    "firebase": "^9.6.8"
+  }
+}
