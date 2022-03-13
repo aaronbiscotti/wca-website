@@ -13887,3 +13887,10 @@ svg {
     opacity: 0;
   }
 }
+.body-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
