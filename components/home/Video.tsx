@@ -13,7 +13,7 @@ const Video = () => {
         <div className="h-[500px] w-[800px] m-auto">
             <h2 className="text-xl font-semibold">We Care Act Houston</h2>
             <p className="text-lg font-[300]">Learn more about our parent organization, We Care Act Houston.</p>
-            <p className="text-muted text-md font-[300] mb-[30px]">Source: <a target="_blank"
+            <p className="text-muted text-md font-[300] mb-[30px]">Source: <a target="_blank" rel="noreferrer"
                     href="https://www.youtube.com/watch?v=LA-W3u8dtEQ&t=37s">2018 Texas
                     Environmental Excellence Awards</a></p>
             <div className="flex justify-center">
@@ -26,11 +26,11 @@ const Video = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
                             <defs>
                                 <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="a">
-                                    <stop stop-color="#FFF" stop-opacity="0" offset="0%" />
-                                    <stop stop-color="#FFF" offset="100%" />
+                                    <stop stopColor="#FFF" stopOpacity="0" offset="0%" />
+                                    <stop stopColor="#FFF" offset="100%" />
                                 </radialGradient>
                             </defs>
-                            <g fill="none" fill-rule="evenodd">
+                            <g fill="none" fillRule="evenodd">
                                 <circle fill="url(#a)" opacity=".3" cx="65" cy="65" r="65" />
                                 <circle fill="url(#a)" opacity=".3" cx="65" cy="65" r="46.429" />
                                 <path

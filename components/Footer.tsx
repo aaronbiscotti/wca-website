@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { Send } from 'tabler-icons-react'
 
@@ -18,24 +19,24 @@ const Footer = () => {
                 <ul className="text-sm text-[#008bd9]">
                     <li className="mb-2">
                     <h6 className="mb-1">
-                        <a className="reset-anchor text-primary" href="/">Home</a>
+                        <Link className="reset-anchor text-primary" href="/">Home</Link>
                     </h6>
                     </li>
                     <li className="mb-2">
                     <h6 className="mb-1">
-                        <a className="reset-anchor text-primary" target="_blank"
+                        <a className="reset-anchor text-primary text-[#008bd9]" target="_blank" rel="noreferrer"
                         href="https://www.paypal.com/donate/?hosted_button_id=D8WVDK67CNM5L">Donate</a>
                     </h6>
                     </li>
                     <li className="mb-2">
                     <h6 className="mb-1">
-                        <a className="reset-anchor text-primary" target="_blank"
+                        <a className="reset-anchor text-primary text-[#008bd9]" target="_blank" rel="noreferrer"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdhMe6zJyZYDNaEjLoWxZSgZU7Ox_TYr3HSdwLrDKUh8qE-qQ/viewform?usp=sf_link">Sign-Up</a>
                     </h6>
                     </li>
                     <li className="mb-2">
                     <h6 className="mb-1">
-                        <a className="reset-anchor text-primary" href="index.html#contact">Contact Us</a>
+                        <a className="reset-anchor text-primary text-[#008bd9]" href="index.html#contact">Contact Us</a>
                     </h6>
                     </li>
                 </ul>
