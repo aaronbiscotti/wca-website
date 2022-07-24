@@ -37,7 +37,7 @@ const Hero = () => {
           <SlideshowButton isActive={isActive3} />
         </button>
       </div>
-      <Image src="/hero.png" className="h-[500px] object-cover absolute right-0" />
+      <img src="/hero.png" className="h-[500px] object-cover absolute right-0" />
     </div>
   )
 }
