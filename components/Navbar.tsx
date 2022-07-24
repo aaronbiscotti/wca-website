@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <div className="sticky top-0 left-0 w-full p-[20px] flex bg-white justify-between items-center z-10">
-        <img src="/logo.svg" width='50' height='50' />
+        <Image src="/logo.svg" width='50' height='50' />
         <div className="flex items-center">
             <ul className="flex space-x-8 font-semibold text-text-title antialiased text-sm">
                 <Link href="/"><li>HOME</li></Link>

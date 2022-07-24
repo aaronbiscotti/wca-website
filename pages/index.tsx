@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import About from '../components/home/About'
 import Features from '../components/home/Features'
 import Hero from '../components/home/Hero'
