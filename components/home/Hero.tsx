@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import React, { useState } from 'react'
 import SlideshowButton from './SlideshowButton';
 
@@ -37,7 +37,7 @@ const Hero = () => {
           <SlideshowButton isActive={isActive3} />
         </button>
       </div>
-      <img src="/hero.png" className="h-[500px] object-cover absolute right-0 " />
+      <img src="/hero.png" className="h-[500px] object-cover absolute right-0" alt="hero" />
     </div>
   )
 }
